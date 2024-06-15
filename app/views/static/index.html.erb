@@ -1,0 +1,24 @@
+<!-- inside app/views/home/index.html.erb -->
+<h1>Welcome, this is the home page</h1>
+
+<div class="announcement">
+<p>I am no longer in the computer business</p>
+<p>In my spare time, I play bridge and direct bridge tournaments.</p>
+<p>I am also studying Spanish and German.</p>
+<h2>Subscribe to newletter</h2>
+<p><%= link_to "Subscribe to free newsletter about language learning ", newsletter_path %> </p>
+<h2>German</h2>
+<p>German online activities, which are available on the Internet from anywhere in the world:<br> <%= link_to "Online: classes, videos, speaking partners, etc.", deutsch_path %> </p>
+<br>
+<p>German activities, which are only available in Northern California:<br> <%= link_to "In person: classes, meetup groups, etc.", treffpunkte_path %> </p>
+<h2>Spanish</h2>
+<p>Spanish online activities, which are available on the Internet from anywhere in the world:<br> <%= link_to "Online: classes, videos, etc.", espanol_path %> </p>
+<p><%= link_to "Review of Netflix's Roma movie ", roma_path %> </p>
+<br>
+<p>Spanish activities, which are only available in Northern California:<br> <%= link_to "In person: classes, meetup groups, etc.", lugaresdereunion_path %> </p>
+
+  <div class="signature">
+    <p>Jim Oser</p>
+    <a href="mailto:oserj@oserconsulting.com">oserj@oserconsulting.com</a>
+  </div>
+</div>

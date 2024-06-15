@@ -7,5 +7,17 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  root "rails/welcome#index"
+  get '/deutsch', to: 'static#deutsch'
+  get '/newsletter', to: 'static#newsletter'
+  get '/treffpunkte', to: 'static#treffpunkte'
+  get '/espanol', to: 'static#espanol'
+  get '/posts', to: 'static#posts'
+  get '/roma', to: 'static#roma'
+  get '/lugaresdereunion', to: 'static#lugaresdereunion'
+  get '/ueber_mich', to: 'static#ueber_mich'
+  get '/kontakt', to: 'static#kontakt'
+  get '/impressum', to: 'static#impressum'
+  get '/article_20160724anfang', to: 'static#article_20160724anfang'
+  get '/article_20160725blogpost', to: 'static#article_20160725blogpost'
+  root 'static#index'
 end
