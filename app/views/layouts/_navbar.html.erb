@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <!-- comment --> 
+    <a class="navbar-brand" href="#">Oser</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link <%=active_class(root_path)%>"  href="<%=root_path %>">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle <%=active_class(espanol_path) + active_class(lugaresdereunion_path) + active_class(roma_path)%>" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Spanish</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item <%=active_class(espanol_path)%>" href="<%= espanol_path %>">Learning Spanish Online</a></li>
+            <li><a class="dropdown-item <%=active_class(lugaresdereunion_path)%>" href="<%= lugaresdereunion_path %>">California Spanish Groups</a></li>
+            <li><a class="dropdown-item <%=active_class(roma_path)%>" href="<%= roma_path %>">Roma</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle <%=active_class(deutsch_path)+active_class(treffpunkte_path)%>" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">German</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item <%=active_class(deutsch_path)%>" href="<%= deutsch_path %>">Learning German Online</a></li>
+            <li><a class="dropdown-item <%=active_class(treffpunkte_path)%>" href="<%= treffpunkte_path %>">California German Groups</a></li>
+          </ul>
+        </li>
+        <li>
+          <a class="nav-link <%=active_class(posts_path)%>" href="<%= posts_path %>">My duolingo posts</a>
+        </li>
+        <% if false %>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            German Authors 
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item " href="artikel-autor-michael-ende.html">Michael Ende</a></li>
+            <li><a class="dropdown-item " href="artikel-autor-erich-kaestner.html">Erich Kästner</a></li>
+            <li><a class="dropdown-item " href="artikel-autor-patrick-susking.html">Patrick Susking</a></li>
+            <li><a class="dropdown-item " href="artikel-autor-mark-twain.html">Mark Twain</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item  href="artikel-autor-u-a-m.html">u.a.m.</a></li>
+          </ul>
+        </li>
+      <% end %>
+        <li class="nav-item">
+          <a class="nav-link <%=active_class(ueber_mich_path)%>"  href="<%=  ueber_mich_path%>">Über mich</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%=active_class(kontakt_path)%>"  href="<%=  kontakt_path%>">Kontakt</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link <%=active_class(impressum_path)%>" href="<%= impressum_path %>">Impressum</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

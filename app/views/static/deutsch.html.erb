@@ -1,0 +1,500 @@
+<div class="blog-post">
+  <h2>Learning German Online</h2>
+  <%= render partial: 'anylanguage', formats: :html  %>
+  <% if false %>
+  <h2 class="blog-post-title">Links to favorite German websites.</h2>
+    <p class="blog-post-meta date-hidden">Samstag, 30. Juli 2016 <a href="mailto:jimoser@mac.com">Jim Oser</a></p>
+  <% end %>
+<ul class="list-group">
+  <li class="list-group-item">
+    <h3>MOOCs (Massive Open Open Courses) given in German</h3>
+    <ul>
+        <% @moocs.each do |mooc| %>
+          <li><%= link_to mooc[0], mooc[1],  target: "_blank" %></li>     
+          <p><%= mooc[2] %></p>
+          <% if mooc[3] != nil %>
+            <ul>
+              <%  mooc[3].each do |course| %>
+                <li> <%= link_to course[0], course[1], target: "_blank" %>
+                   <% if course[2] != nil %>
+                     <p>  <%= " #{course[2]}" %> </p>
+                   <% end %>  
+                </li>
+                     
+              <% end %>
+            </ul>
+          <% end %>
+        <% end %>
+    </ul>
+  </li>
+  <li class="list-group-item">
+    <h3>Find somebody to talk to in German or maybe even talk to in Esperanto</h3>
+    <del>
+    <p>I talk regularly with people from Germany, Austria, and Switzerland with
+    <%= link_to "http://mylanguageexchange.com", "http://mylanguageexchange.com", target: "_blank" %>
+    This costs $4 per month or $24 per year.
+    </p>
+    <p>Gabriel Gelman from <%= link_to "http://sprachheld.de", "http://sprachheld.de", target: "_blank" %> recently recommended another tandem language partner site <%= link_to "http://conversationexchange.com", "http://conversationexchange.com", target: "_blank" %>. This service is free. Gabriel's comments are here: <%= link_to "https://www.sprachheld.de/sprachtools-katalog/conversation-exchange/", "https://www.sprachheld.de/sprachtools-katalog/conversation-exchange/", target: "_blank" %>   
+    </p>
+  </del>
+  <p>I am now using the Tandem application. It is available for iOS and Android(GooglePlay) devices. In the future, it is suppose to be available for desktop devices. See: <%= link_to "http://tandem.net", "http://tandem.net", target: "_blank" %> There is a review of the Tandem application here: <%= link_to "http://fluentlanguage.cookies.uk/blog/tandem-language-exchange-review", "http://fluentlanguage.cookies.uk/blog/tandem-language-exchange-review", target:"_blank" %>
+  </p>
+  </li>
+  <li class="list-group-item">
+    <h3>Online German books, magazines, and newspapers.</h3>
+    <%= link_to "http://www.onleihe.net", "http://www.onleihe.net", target: "_blank" %>
+    <p>Read on your desktop computer, or on your iOS or Android device.</p>
+    <p>Once registered, search for:
+    <ul> 
+      <li>B1</li>
+      <li>DaF (Deutsch als Fremdsprache)</li>
+      <li>the name of your favorite German author</li>
+      <li>Der Spiegel</li>
+      <li>Dein Spiegel</li>
+    </ul>
+    </p>
+     <h4>Offered world-wide.</h4>
+      <p>If you are outside the USA, then to register, find your Goethe Institute at:
+     <%= link_to "http://www.onleihe.net/ihre-onleihe-finden/onleihen-der-goethe-institute.html", "http://www.onleihe.net/ihre-onleihe-finden/onleihen-der-goethe-institute.html", target: "_blank" %></p>
+     <p> A demonstration of the online library is at:
+      <%= link_to "http://www2.onleihe.de/goethe-institut/frontend/contact,0-0-0-100-0-0-0-0-0-0-0    .html", "http://www2.onleihe.de/goethe-institut/frontend/contact,0-0-0-100-0-0-0-0-0-0-0    .html", target: "_blank" %>
+     </p>
+     <h4>USA contact information</h4 >
+     <p>For only USA, contact
+      <%= link_to "Goethe Institute in New York", "http://www.goethe.de/ins/us/ney/bib/onl/enindex.htm", target: "_blank" %>
+      <p>This is the best deal in the Internet <del>for only $10</del> FREE (zero) (kostenlos!) per year</p> 
+  </li>
+  <li class="list-group-item">
+  <h3>YouTube</h3> 
+  <ul>
+  <li>
+  <%= link_to "Jim Oser's YouTube Channel", "https://www.youtube.com/user/jimoser113", target: "_blank" %>
+  <p> has German videos, including full length movies, interviews, and songs.
+Note because of copyright laws, the movies sometimes disappear or may not be available in all countries.
+  </p>
+  </li>
+  <li>
+  <%= link_to "YouTube search ganzer Film", "https://www.youtube.com/results?search_query=ganzer+film", target: "_blank" %>
+  <p>Sometimes by searching "ganzer Film", while means "whole Film", you can find all of a German movie on youtube.
+Note because of copyright laws, the movies sometimes disappear or may not be available in all countries.
+  </p>
+  </li>
+  <li>
+  <p>Recommended by Georgi Yankov
+    <ul>
+      <li>
+        <%= link_to "Das Wunder Von Bern (Deutsch audio - English sub)", "https://www.youtube.com/watch?v=og1RAWvnpA0", target: "_blank" %>
+        
+      </li>
+    </ul>
+  </p>
+  </li>
+  <li>
+  <%= link_to "YouTube sempervideos", "https://www.youtube.com/user/SemperVideo/playlists", target: "_blank" %>
+  <p>
+    Great technical videos explaining how to use Windows and other computer products. All videos are in German.
+  </p>
+  </li>
+  <li>
+  Here is a quote from <%= link_to "FAZ Nachhilfe auf Youtube", "http://www.faz.net/-gum-8ywq4", target: "_blank" %>
+  <blockquote cite="http://www.faz.net/-gum-8ywq4"> 
+<p><strong>TheSimpleClub </strong>bietet Erklärvideos, Übungsaufgaben und Zusammenfassungen in acht verschiedenen Disziplinen. Abrufbar sind die Videos auf Youtube, einer eigenen App oder der Website. Behandelt werden in dem Club in lockerem Plauderton relevante Themen für Schüler und Studenten.</p>
+
+<p><strong>Mathe by Daniel Jung</strong> heißt ein aus mehr als 2000 kurzen Videos bestehendes Angebot für Mathe-Nachhilfe. Am Whiteboard erklärt Jung ganz unprätentiös und leicht verständlich mathematische Themen von der 5. Klasse bis zum Studium.</p>
+
+<p><strong>Musstewissen </strong>ist ein ZDF-Schulbegleitungsformat für funk, ein Content-Netzwerk auf Youtube, Facebook und Co.; Nachhilfe gibt es in fünf Fächern, inhaltlich werden schulische Themen ab der 8. Klasse behandelt.</p>
+
+<p><strong>Phil’s Physics</strong> sollte ursprünglich nur ein Buch werden. Mit dem Erscheinen ist zusätzlich ein Youtube-Kanal daraus entstanden, auf dem der Physik-Doktorand Philip Häusser physikalische Alltagsphänomene ausprobiert und erklärt.</p>
+
+<p><strong>Die Klugscheisserin</strong> ist ein Kanal von Lisa Ruhfus, auf dem sie Fragen beantwortet, die sich kluge Menschen schon immer gestellt haben. Dabei imitiert sie den Duktus einer strengen Deutschlehrerin. Techtastisch besteht aus kurzen Unterhaltungsvideos, in denen losgelöst von deutschen Lehrplänen anhand von Experimenten chemische Reaktionen und physikalische Phänomene vorgestellt werden.</p>
+
+<p><strong>MrWissen2go</strong> heißt eigentlich Mirko Drotschmann. Auf seinem Kanal erklärt er Geschichte und Politik und gibt prägnante Rückblicke auf Nachrichten der Woche.</p>
+  
+    </blockquote> 
+  </li>
+  <li>
+  Here is a quote from <%= link_to "Sonja Hubmanns Deutschkurs auf Youtube", "http://www.sonni.tv/deutschkurs.htm", target: "_blank" %>
+  <blockquote cite="http://www.sonni.tv/deutschkurs.htm">
+  <p>
+
+Der Kurs existiert in sechs Sprachen (Englisch, Französisch, Spanisch, Russisch, Arabisch, Chinesisch) und beinhaltet nicht nur Grammatik und Wortschatz, sondern auch Reportagen über Wien.
+  </p>
+  </blockquote>
+  </li>
+  <li>
+  Ausprache(pronunication) 
+  <p>Du weißt definitiv, dass du der deutschen Sprache mächtig bist, wenn du "tschechisches Streichhlolzschächtelchen" aussprechen kannst.
+  </p>
+  <p>
+  You know you're German when ...
+
+  you can pronounce "tschechisches Streichholzschächtelchen".
+  </p>
+  <p>
+  <%= link_to "\"How to say \"tschechisches Streichholzschäctelchen - German Learning Tips #53 - Deutsch lernen, Learn German with Herr Antrim", "https://www.youtube.com/watch?v=0UVxunvy7-g", target: "_blank" %>
+  </p>
+  <p>
+  <%= link_to "Deutsch: Aussprache von CH (deutsche Untertitel)/Pronunciation of CH (German subtitles) Language Sheep", "https://www.youtube.com/watch?v=M3uqlfoU50c", target:"_blank" %>
+  </p>
+  </li>
+  <li>
+  <%= link_to "Peter Heinrich's easydaf.de videos about Deine deutsche Gastfamilie", "https://www.youtube.com/playlist?list=PLFqfMl80-rDoJG9mAwxtSczVKGY2KzEcJ", target: "_blank" %>
+  <p>
+    Peter Heinrich tells and shows you everything that his family is doing in easy German with subtitles in German. 
+    <ul>
+      <li>
+  <%= link_to "Deine deutsche Gastfamilie", "https://youtu.be/Ut3O3UNL4QU",target: "_blank" %>
+  <p> Highly recommended: 10 minute video explaining what his project <%= link_to "Peter Heinrich's easydaf Gastfamilie", "http://www.easydaf.de/gastfamilie" %> is.</p>
+  <p>By the way, if you go to: <%= link_to "Peter Heinrich's easydaf Gastfamilie", "http://www.easydaf.de/gastfamilie" %> , you can get first 3 full length movies free.</p>
+      </li>
+      <li>
+  <%= link_to "Deutsch lernen - Wir kaufen einen Weihnachtsbaum", "https://youtu.be/KC-HZTdR8Wg",target: "_blank" %>
+      </li>
+      <li>
+  <%= link_to "Deine deutsche Gastfamilie - Geburtstagseinladungen", "https://www.youtube.com/watch?v=VOs7BuaaVyY",target: "_blank" %>
+      <p>This is my favorite easydaf.de/gastfamilie video. This is the first 2 minutes of the actual video. You need to subscribe to http://easydaf.de/gastfamile to see the full video.
+      </p>
+      </li>
+        
+    </ul>
+  </p>
+  </li>
+</ul>
+  </li>
+
+  <li class="list-group-item">
+  <h3>Easy languages ... learning languages from the street.</h3>
+  <ul>
+    <li>
+      <%= link_to "Easy Languages - German", "http://easy-languages.org/?cat=106", target: "_blank" %> 
+    </li>
+    <li>
+      <%= link_to "Easy German 158 - Family Life in Germany", "http://easy-languages.org/?p=20032", target: "_blank" %> 
+      <p>Olga from Perm, Russia interviews people in Berlin about family life.</p>
+      <p>Also available on <%= link_to "YouTube Easy German 158 Family Life in Germany", "https://youtu.be/B3LagCVBKKc", target: "_blank" %>
+    </li>
+    <li>
+      <%= link_to "Easy German 138 - How to learn a new language?", "http://easy-languages.org/?p=19882", target: "_blank" %> 
+      <p>Learn German with Easy German: Famous polyglot Luca (http://www.thepolyglotdream.com) visits us in Berlin :D So Cari and Luca go out and ask people in the streets about the best methods to learn a language!</p>
+      <p>Also available on <%= link_to "YouTube Easy German 138 - How to learn a new language?", "https://youtu.be/ZqObBG-NYPI", target: "_blank" %>
+    </li>
+    <li>
+      <%= link_to "Easy German 124 – Deutsch lernen mit Musik", "http://easy-languages.org/?p=19706", target: "_blank" %> 
+      <p>Learn German with Easy German: 
+      Idahosa believes in the power of music when it comes to language learning. So he asks people in Berlin for German music to recommend for learning German :D
+      </p>
+      
+      <p>Also available on <%= link_to "YouTube Easy German 124 - Deutsch lernen mit Musik", "https://youtu.be/loJO4wLCZIQ", target: "_blank" %>
+    </li>
+    <li>
+      <%= link_to "Easy German 120 – What do the Swiss think about Germany", "http://easy-languages.org/?p=19605", target: "_blank" %> 
+      <p>Learn German with Easy German: 
+      Manuel talks to people in Basel, Switzerland, to find out what the Swiss really think about their neighboring country, Germany.
+      </p>
+      
+      <p>Also available on <%= link_to "YouTube Easy German 120 - What do the Swiss think about Germany", "https://www.youtube.com/watch?v=Mu6Wg8A5qBI", target: "_blank" %> </p>
+      <p> On the YouTube page there are 337 comments </p>
+    </li>
+    <li>
+      <%= link_to "Step into German", "http://www.goethe.de/ins/us/saf/prj/stg/flm/fdm/enindex.htm", target: "_blank" %> 
+      <p>Films to learn German, recommended by the Goethe Institute. 
+        <ul>
+          <li><%= link_to "Felix", "http://www.goethe.de/ins/us/saf/prj/stg/flm/fdm/enindex.htm", target: "_blank" %> </li>
+          <li><%= link_to "Edeka - Supergeil", "http://www.goethe.de/ins/us/saf/prj/stg/flm/kaf/en14359382.htm", target: "_blank" %> </li>
+          <li><%= link_to "BVG ist mir egal", "http://www.goethe.de/ins/us/saf/prj/stg/flm/kaf/enindex.htm", target: "_blank" %> </li>
+        </ul>
+      </p>
+    </li>
+    <li>
+      <%= link_to "Newsticker Deutsch - Deutsch üben mit Topnews in Social Media", "http://newsticker-deutsch.net/index.php/startseite.html", target: "_blank" %> 
+      <p>Discusses news stories with excercises.
+        <ul>
+          <li><%= link_to "Junge Autofahrer gefährdet", "http://newsticker-deutsch.net/index.php/topnews/articles/id-2016-10-27-junge-autofahrer-gefaehrdet.html", target: "_blank" %> </li>
+          <li><%= link_to "Minifortsetzung des Harry Potter-Romans", "http://newsticker-deutsch.net/index.php/id-2014_07/articles/id-20140717-minifortsetzung-des-harry-potter-romans.html", target: "_blank" %> </li>
+          <li><%= link_to "Das Loreley-Besucherzentrum", "http://newsticker-deutsch.net/index.php/id-2015_08/articles/id-20150821-loreley-besucherzentrum.html", target: "_blank" %> </li>
+        </ul>
+      </p>
+    </li>
+  </ul>
+  </li>
+  <li class="list-group-item">
+  <h3>Dictionaries</h3>
+  <ul>
+    <li>
+      <%= link_to "http://dict.leo.org", "http://dict.leo.org", target: "_blank" %> 
+    </li>
+    <li>
+      <%= link_to "http://pons.de", "http://pons.de", target: "_blank" %> 
+      <p>This website has:
+        <ul>
+          <li>German to other languages dictionaries</li>
+          and
+          <li>other languages to German dictionaries</li>
+          However, hidden in the dropdown menu is also:
+          <li>Rechtschreibung und Fremdwörter</li>
+          <li>Deutsch als Fremdsprache</li>
+        </ul>
+    </li>
+    <li>
+      <%= link_to "http://www.verbformen.de", "http://www.verbformen.de", target: "_blank" %> 
+      <p>How do you conjugate googeln? See:
+      <%= link_to "http://www.verbformen.de/konjugation/?i=googeln", "http://www.verbformen.de/konjugation/?i=googeln", target: "_blank" %> 
+
+      </p>
+    </li>
+  </ul>
+  </li>
+  <li class="list-group-item">
+  <h3>Grammer checkers</h3>
+  <ul>
+  <li>
+  <%= link_to "Duden's Grammer checker", "http://www.duden.de/rechtschreibpruefung-online", target: "_blank" %>
+  <p>One can paste in German text, and then the website will correct the text.
+Recently, this website, started posting so many ads, that it became very annoying.
+</p>
+  </li>
+
+  <li>
+  <%= link_to "languagetool.org", "https://languagetool.org", target: "_blank" %>
+  <p>However there is a better website (hard to believe that it is better than Duden) to check your text for grammar mistakes called:
+      <%= link_to "https://languagetool.org", "https://languagetool.org", target: "_blank" %>
+   </p>
+  </li>
+
+</ul>
+</li>
+  <li class="list-group-item">
+  <h3>Kids' websites for native German speakers</h3>
+  <ul>
+  <li>
+  <%= link_to "https://www.stopkidsmagazin.de", "http://stopkidsmagazin.de", target: "_blank" %>
+  <p>Many things on this website including jokes for kids.
+</p>
+  </li>
+
+  <li>
+  <%= link_to "https://www.fragfinn.de", "https://fragfinn.de", target: "_blank" %>
+  <p>
+    A German children's friendly search engine. Try this instead of google.
+   </p>
+  </li> 
+  <li>
+  <%= link_to "http://www.uebersetzung.at/twister/de.htm", "http://uebersetzung.at/twister/de.htm", target: "_blank" %>
+  <p>
+    German Tongue Twisters 
+    Note: Translations are at the bottom of the webpage.
+   </p>
+  <p>
+    Zungenbrecher 
+   </p>
+  </li> 
+
+</ul>
+</li>
+  <li class="list-group-item">
+  <h3>Daily summary of German news in German</h3>
+    <ul>
+      <li>
+        <%= link_to "Krautreporter", "https://krautreporter.de/", target: "_blank" %> has a daily summary of news that is relevant to Germany. 
+        Free email subscription to Krautreporter daily news: 
+        <%= link_to "https://krautreporter.de/pages/newsletter","https://krautreporter.de/pages/newsletter", target: "_blank" %>
+      </li>
+      <li>
+        <%= link_to "Der Spiegel daily news","https://www.spiegel.de/newsletter/index.html", target: "_blank" %>
+        <p>Free email subscription to Online Der Spiegel daily news summary.</p>
+      </li>
+      <li>
+        <%= link_to "http://www.nachrichtenleicht.de/","http://www.nachrichtenleicht.de/", target: "_blank" %>
+        <p>Easy news.</p>
+      </li>
+      <li>
+        <%= link_to "http://www.kiraka.de/startseite/","http://www.kiraka.de/startseite/", target: "_blank" %>
+        <p>kiraka stands for: Kinder Radio Kanal</p>
+        <p>There are things on this children's website to listen to and to read.</p>
+        <p>Sponsored by WDR(Westdeutscher Rundfunk Köln)</p>
+        <ul>
+          <li>
+            <%= link_to "Nachrichten: Was dürfen Lehrer nicht?","http://www.kiraka.de/spielen-und-hoeren/nachrichten/beitrag/b/was-duerfen-lehrer-nicht/", target: "_blank" %>
+          </li>
+          <li>
+            <%= link_to "Nachrichten: Schülerin wegen Facebook-Beleidigung verurteilt","http://www.kiraka.de/spielen-und-hoeren/nachrichten/beitrag/b/schuelerin-wegen-facebook-beleidigung-verurteilt/", target: "_blank" %>
+          </li>
+          <li>
+            <%= link_to "Flüchtlinge bei uns: Wie könnt ihr Flüchtlingskindern helfen?","http://www.kiraka.de/fluechtlinge-bei-uns/fluechtlinge-bei-uns-detailseite/b/wie-koennt-ihr-fluechtlingskindern-helfen/", target: "_blank" %>
+          </li>
+          <li>
+            <%= link_to "Geschichte: Das Deutsche Rote Kreuz wird 150 Jahre alt","http://www.kiraka.de/spielen-und-hoeren/wissen/geschichte/beitrag/b/das-deutsche-rote-kreuz-wird-150-jahre-alt/", target: "_blank" %>
+          </li>
+          <li>
+            <%= link_to "Nachrichten: 9-Jähriger wird zum Lebensretter","http://www.kiraka.de/spielen-und-hoeren/nachrichten/beitrag/b/9-jaehriger-wird-zum-lebensretter/", target: "_blank" %>
+          </li>
+          <li>
+            <%= link_to "Musik: Lied der Woche: Adalbert die Ameise","http://www.kiraka.de/spielen-und-hoeren/musik/lied-der-woche/beitrag/b/die-pullums-adalbert-die-ameise/", target: "_blank" %>
+          </li>
+          <li>
+            <%= link_to "Hörspiele:Die Schule der Weihnachtsmänner","http://www.kiraka.de/spielen-und-hoeren/radio-tipps/hoerspiele/beitrag/b/die-schule-der-weihnachtsmaenner/", target: "_blank" %>
+          </li>
+          <li>
+          <%= link_to "Reportagen: Was ihr im KiRaKa hören könnt: erklärt in 5 Minuten","http://www.kiraka.de/spielen-und-hoeren/reportagen/beitrag/b/kiraka-fuenf-minuten/", target: "_blank" %>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+
+  <li class="list-group-item">
+  <h3>Blogs about learning or teaching German</h3>
+  <ul>
+    <li>
+Best blog about learning or teaching German comes from Greece:
+Kreativer Deutschunterricht Sofia Mondrinou
+Signup here to receive blog via email:
+<%= link_to "Sofia Mondrinou's Kreativer Deutschunterricht" , "https://kreativerdeutschunterricht.wordpress.com/", target: "_blank" %>
+    </li>
+  </ul>
+  </li>
+
+
+  <li class="list-group-item">
+  <h3>Alumniportal Deutschland</h3>
+  <ul>
+    <li>
+<%= link_to "Alumniportal Deutschland" , "http://www.alumniportal-deutschland.org/", target: "_blank" %>
+<p>If you have ever worked in Germany, sign-up for this.</p>
+    </li>
+  </ul>
+  </li>
+
+
+  <li class="list-group-item">
+  <h3>Free online German courses</h3>
+  <ul>
+  <li>
+  Goethe Institut Deutsch für Dich<br/>
+  Note that in right hand corner, one can choose either to have the instructions in Deutsch or in English.<br/>
+      <%= link_to "https://www.goethe.de/dfd", "https://www.goethe.de/dfd", target: "_blank" %></li>
+  </ul>
+  </li>
+
+
+  <li class="list-group-item">
+  <h3>extr@ auf Deutsch (German) - 01. Sams Ankunft (Teil 1 / 3) </h3>
+  <p>Funny videos about Sam the American experiences in Germany.
+  For the other videos in the series, go to
+      <%= link_to "YouTube", "http://www.youtube.com", target: "_blank" %>
+  and search on:
+<code>extr@ auf Deutsch Sam</code></p>
+  </li>
+
+  <li class="list-group-item">
+  <h3>Deutsche Welle</h3>
+  <ul>
+      <li><%= link_to "http://www.dw.de", "http://www.dw.de", target: "_blank" %></li>
+  <p>
+There are so many things here.
+One can view the website in German or in English.
+There are videos. There are free German language courses. There is slowly spoken German news.</p>
+<p>
+Sometimes people tell me that they get DW through their Comcast cable television; there is so much more on the DW website.
+</p>
+      <li><%= link_to "DW's free German Courses", "http://www.dw.de/deutsch-lernen/deutschkurse/s-2068", target: "_blank" %></li>
+      <li><%= link_to "http://www.dw.de/deutsch-lernen/deutsch-xxl/s-12376", "http://www.dw.de/deutsch-lernen/deutsch-xxl/s-12376", target: "_blank" %></li>
+      <li>
+      <%= link_to "Jojo sucht das Gluck video", "https://itunes.apple.com/us/podcast/jojo-sucht-das-gluck-mit-untertiteln/id398835299", target: "_blank" %></li>
+      <li> <%= link_to "Slowly spoken German newcasts", "http://www.dw.de/deutsch-lernen/nachrichten/s-8030", target: "_blank" %></li>
+
+      <p>One can also subscribe to daily slowly spoken German news through iTunes.
+      </p>
+      <li><%= link_to "A1, A2, B1 | Harry – gefangen in der Zeit", "http://www.dw.com/de/deutsch-lernen/harry/s-13219", target: "_blank" %></li>
+      <li><%= link_to "Learning German with Harry", "http://harry.dw.com/landing/en/index.html", target: "_blank" %></li>
+  </li>
+
+</ul>
+</li>
+
+  <li class="list-group-item">
+  <h3>Podcasts</h3>
+  <ul>
+      <li><%= link_to "wdr5 Tagesgespraech", "http://www1.wdr.de/radio/wdr5/index.html", target: "_blank" %></li>
+      <p>
+      Listen to German radio. This is a Monday - Friday talkin show. Each show is about one particular topic.</p>  
+      <li><%= link_to "wdr5 Tagesgespraech via iTunes podcast", "https://itunes.apple.com/de/podcast/das-tagesgesprach-im-wdr-5/id270118455", target: "_blank" %></li>
+      <p>One can access the shows from this website or thru iTunes.</p>
+      <li><%= link_to "wdr5 Töne, Texte, Bilder", "http://www1.wdr.de/radio/wdr5/sendungen/toene-texte-bilder/index.html", target: "_blank" %></li>
+      <li><%= link_to "wdr5 Tischgespräch", "http://www1.wdr.de/radio/wdr5/sendungen/tischgespraech/index.html", target: "_blank" %></li>
+  </ul>
+  </li>
+
+  <li class="list-group-item">
+  <h3>iPhone and iPad (iOS) apps</h3>
+  <p>In the iTunes store, search:
+  <code>Goethe Institut</code>
+  <ul>
+      <li><%= link_to "adventure-german-mystery-sky", "https://itunes.apple.com/us/app/adventure-german-mystery-sky/id480129579?mt=8", target: "_blank" %></li>
+      <li><%= link_to "lernabenteuer-deutsch-das", "https://itunes.apple.com/de/app/lernabenteuer-deutsch-das/id480129579?mt=8", target: "_blank" %></li>
+  </ul>
+  </p>
+  </li>
+
+  <li class="list-group-item">
+  <h3>Tutor Compass</h3>
+  <%= link_to "http://www.tutorcompass.de/deutsch-lernen-meine-tipps-fuer-schueler/", "http://www.tutorcompass.de/deutsch-lernen-meine-tipps-fuer-schueler/", target: "_blank" %></li>
+  </li>
+  <li class="list-group-item">
+  <h3><%= link_to "Easy Daf (first 3 videos are free)", "http://easydaf.de/gastfamilie/", target: "_blank" %></h3>
+  
+  <p>
+    Peter Heinrich tells and shows you everything that his family is doing in easy German with subtitles in German. 
+    </p>
+  <p>
+    <ul>
+      <li>
+  <%= link_to "Deine deutsche Gastfamilie", "https://youtu.be/Ut3O3UNL4QU",target: "_blank" %>
+  <p> Highly recommended: 10 minute video explaining what his project <%= link_to "Peter Heinrich's easydaf Gastfamilie", "http://www.easydaf.de/gastfamilie" %> is.</p>
+  <p>By the way, if you go to: <%= link_to "Peter Heinrich's easydaf Gastfamilie", "http://www.easydaf.de/gastfamilie" %> , you can get first 3 full length movies free.</p>
+      </li>
+      <li>
+  <%= link_to "Deutsch lernen - Wir kaufen einen Weihnachtsbaum", "https://youtu.be/KC-HZTdR8Wg",target: "_blank" %>
+      </li>
+      <li>
+  <%= link_to "Deine deutsche Gastfamilie - Geburtstagseinladungen", "https://www.youtube.com/watch?v=VOs7BuaaVyY",target: "_blank" %>
+      <p>This is my favorite easydaf.de/gastfamilie video. This is the first 2 minutes of the actual video. You need to subscribe to http://easydaf.de/gastfamile to see the full video.
+      </p>
+      </li>
+        
+    </ul>
+  </p>
+  </li>
+  <br/>
+  <br/>
+  <br/>
+<div id="krautreporter_widget" data-posts="1"></div>
+</div>
+<% if false %>
+  	  <!-- nested columns -->	
+          <div class="row">
+            <article class="ersterartikel artikel">
+  	    <div class="col-sm-2 col-md-2 col-sm-offset-1 col-md-offset-1">
+  	      <img src="images/Mark_Twain_by_Abdullah_Frères,_1867.jpg" class="artikelbild img-responsive" alt="Mark Twain">
+                <small class="artike-metadata">By <a href="//commons.wikimedia.org/wiki/Abdullah_fr%C3%A8res" class="mw-redirect" title="Abdullah frères">Abdullah frères</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=9538202">Library of Congress, Public Domain</a> </small> 
+              </div> 
+  	    <div class="col-sm-9 col-md-9">
+                <h2><a href="artikel-autor-mark-twain.html">Mark Twain</a></h2> 
+  	      <div class="lead">
+                  <p>Der amerikanische Autor aka Samuel Clemens.</p>
+  	      </div>
+                <p>Deutsche Ausgaben</p>
+  	      <ul>
+  	        <li>Die schreckliche deutsche Sprache</li>
+                  <li><a href="https://de.wikipedia.org/wiki/Die_Abenteuer_des_Tom_Sawyer">Die Abenteuer des Tom Sawyer</a></li>
+  	        <li><a href="https://de.wikipedia.org/wiki/Die_Abenteuer_des_Huckleberry_Finn">Die Abenteuer des Huckleberry Finn</a></li>
+  	      </ul>
+	      <a href="artikel-autor-mark-twain.html">mehr ...</a><span class="glyphicon glyphicon-chevron-right"></span>
+              </div> <!-- end of col-sm-6 -->
+            </article>
+          </div> <!-- end of row -->
+
+        </div> <!-- /.blog-post -->
+<% end %>
+<br>
+<p>Please also see:<br>German activities, which are only available in Northern California:<br> <%= link_to "In person: classes, meetup groups, etc.", treffpunkte_path %> </p>

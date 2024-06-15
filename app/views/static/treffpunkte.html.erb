@@ -1,0 +1,148 @@
+<div class="blog-post">
+  <% if false %>
+  <h2 class="blog-post-title">Links to favorite German websites.</h2>
+    <p class="blog-post-meta date-hidden">Samstag, 30. Juli 2016 <a href="mailto:jimoser@mac.com">Jim Oser</a></p>
+  <% end %>
+  <h2>California German Groups</h2>
+  <h3>Die deutsche Treffpunkte um das San Francisco Bucht Gebiet</h3>
+  <h4>Von Santa Rosa nach San Jose</h4>
+  <ul class="list-group">
+    <li class="list-group-item">
+    <%= link_to "Petaluma Oktoberfest", "http://odhslodges.org/petaluma/oktoberfest/", target: "_blank" %>
+    <p>Sunday, October 13, 2019
+    </p>
+    <p>
+      See photos and description at 
+    <%= link_to "Petaluma Oktoberfest", "http://odhslodges.org/petaluma/oktoberfest/", target: "_blank" %>
+    </p>
+    </li>
+  </ul>
+  <% @meetings.each do |meeting| %>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h3><%= meeting[:name] %></h3>
+        <address>
+          <strong><%= meeting[:place] %></strong><br>
+          <%= meeting[:street] %><br>
+          <%= meeting[:city] %>, <%= meeting[:state] %>. <%= meeting[:zip] %> <br> 
+        </address>
+        <time>
+          <%= meeting[:start_time] %><br>
+          <%= simple_format meeting[:normal_day] %><br>
+          <% if meeting[:exception_day] != "" %>
+            <%= meeting[:exception_day] %><br>
+          <% end %>
+        </time>
+        <%= link_to(meeting[:website],meeting[:website])    %>
+      </li>
+    </ul>
+  <% end %>
+  <ul class="list-group">
+    <li class="list-group-item">
+    <%= link_to "German American Business Association", "http://www.gaba-network.org/", target: "_blank" %>
+    <p>A German group consisting of people from Munich, Southern California, and Northern California.</p>
+    </li>
+  </ul>
+
+  <ul class="list-group">
+  <li class="list-group-item">
+  <%= link_to "SF German Stammtisch Meetup Group", "https://www.meetup.com/german-56/", target: "_blank" %>
+  <p>Over 3000 Bay Area members. Events throughout the SF Bay Area, not just San Francisco.
+  </p>
+  </li>
+</ul>
+  <ul class="list-group">
+  <li class="list-group-item">
+  <%= link_to "Napa German Language Meetup Group", "https://www.meetup.com/Napa-German-Language-Meetup-Group/", target: "_blank" %>
+  </li>
+</ul>
+
+  <ul class="list-group">
+  <li class="list-group-item">
+  <%= link_to "Sonoma State German Program", "http://web.sonoma.edu/modlang/german/", target: "_blank" %>
+  </li>
+</ul>
+
+  <ul class="list-group">
+  <li class="list-group-item">
+  <%= link_to "SSU German Club Gemütlichkeit Facebook page", "https://www.facebook.com/groups/ssugermanclub/", target: "_blank" %>
+    <p>Most Sonoma State German Club events are open to students and nonstudents.</p>
+  </li>
+</ul>
+  <ul class="list-group">
+  <li class="list-group-item">
+  <%= link_to "The Goethe Institute in San Francisco", "http://www.goethe.de/ins/us/saf/enindex.htm", target: "_blank" %>
+  </li>
+</ul>
+  <ul class="list-group">
+  <li class="list-group-item">
+  <h3>
+    German Language School of North Bay</h3>
+  <p>
+      <%= link_to "German Language School of North Bay", "http://germanschoolmarin.com/", target: "_blank" %>
+A German language school that meets Saturday mornings in Santa Rosa and Novato. Classes for children and adults. 
+  </p>
+  <p>Afflilitated with 
+  <%= link_to "GASANC (The German School Association of Northern California)", "http://germansaturdayschools.org/", target: "_blank" %> with the following schools:
+     <ol>
+       <li>
+          <%= link_to "German School of East Bay (Oakland)", "http://germansaturdayschools.org/german-school-of-the-east-bay/", target: "_blank" %>
+       </li>
+       <li>
+          <%= link_to "German-American School of Palo Alto", "http://germansaturdayschools.org/german-american-school-of-palo-alto/", target: "_blank" %>
+       </li>
+       <li>
+          <%= link_to "German School of Fremont", "http://germansaturdayschools.org/german-school-of-fremont/", target: "_blank" %>
+       </li>
+       <li>
+          <%= link_to "German of School San Francisco", "http://germansaturdayschools.org/german-school-of-san-francisco/", target: "_blank" %>
+       </li>
+       <li>
+          <%= link_to "San Ramon Valley German School", "http://germansaturdayschools.org/san-ramon-valley-german-school/", target: "_blank" %>
+       </li>
+       <li>
+          <%= link_to "South Bay Deutscher Schulverein (South San Jose)", "http://germansaturdayschools.org/south-bay-deutscher-schulverein/", target: "_blank" %>
+       </li>
+     </ol>
+  </p>
+  </li>
+</ul>
+
+  <ul class="list-group">
+  <li class="list-group-item">
+  <%= link_to "German Language School of Marin's Facebook page", "https://www.facebook.com/germanschoolmarin/", target: "_blank" %>
+  </li>
+</ul>
+
+  <ul class="list-group">
+  <li class="list-group-item">
+  <%= link_to "Wiebke Meineke's German classes at The Ranch aka Belevedere Tiburon Rec Center", "http://theranchtoday.org/language.aspx", target: "_blank" %>
+  </li>
+</ul>
+
+  <ul class="list-group">
+  <li class="list-group-item">
+  <%= link_to "Hamid Emami classes at maringermanlanguage.com", "http://www.maringermanlanguage.com/", target: "_blank" %>
+  </li>
+</ul>
+  <ul class="list-group">
+  <li class="list-group-item">
+  <%= link_to "Manfred Thelig-Speer's classes at Vintage House in Sonoma", "http://vintagehouse.org/programs-and-services/learning-and-growing/languages/ ", target: "_blank" %>
+  </li>
+
+  
+</ul>
+  <ul class="list-group">
+  <li class="list-group-item">
+  <h3>Other Bay Area groups (always call first, websites are often not up-to-date)</h3>
+  <ul>
+    <li><%= link_to "United German-American Societies of San Francisco and Vicinity (UGAS-SF)", "http://www.ugas-sf.org/", target: "_blank" %></li>
+    <li><%= link_to "United German-American Societies of East Bay and Vicinity (UGAS-East Bay)", "http://www.ugas-eb.org/", target: "_blank" %></li>
+    <li><%= link_to "Excelsior German Radio Show", "http://excelsiorcenter.org/exc    elsior-radio", target: "_blank" %> on 1450AM-KEST from 9-11am on Sundays. One can also listen to a live stream or hear past shows online. </li>
+    <li><%= link_to "Excelsior German Center in Oakland", "http://excelsiorcenter.org", target: "_blank" %></li>
+  </uL>
+  </li>
+</ul>
+<p>Please also see:<br>German online activities, which are available on the Internet from anywhere in the world:<br> <%= link_to "Online: classes, videos, speaking partners, etc.", deutsch_path %> </p>
+<br>
+</div>

@@ -1,0 +1,28 @@
+
+@ [Joe-Bill](https://www.duolingo.com/profile/Joe-Bill)
+Sounds like you are looking for feel good Spanish videos. Diego Ojeda just started promising one feel good video everyday during covid 19.
+
+youtube videos with transcripts, made for high school students
+
+DIEGO OJEDA
+
+World Language Instruction
+
+U.S.A. High School Spanish teacher
+
+[NOTICIAS POSITIVAS EN TIEMPOS NEGATIVOS (COVID-19)](https://srojeda.com/noticias-positivas-en-tiempos-negativos-covid-19/)
+
+> COVID-19 HA TRAIDO UNA INUNDACIÓN PERMANENTE DE NOTICIAS NEGATIVAS. ENFERMEDAD, VIRUS, MUERTE, MALA ECONOMÍA, DESEMPLEO, DOLOR, CONFINAMIENTO, ESCUELAS CERRADAS… LA LISTA ES INTERMINABLE Y SIN EMBARGO LOS MAESTROS DEBEMOS SEGUIR ENSEÑANDO AHORA REMOTAMENTE.
+
+> CADA VEZ QUE ME REUNO VIRTUALMENTE CON MIS ESTUDIANTES PUEDO VER UN POCO DE DESESPERANZA EN SUS EXPRESIONES Y OJOS. POR ELLO DECIDÍ BUSCAR BUENAS NOTICIAS Y CONTÁRSELAS EN UN VIDEO SENCILLO Y COMPRENSIBLE. AUNQUE SÉ QUE ESTO NO CAMBIARÁ NUESTRA REALIDAD, TAMBIÉN SÉ QUE A NUESTROS JÓVENES LES GUSTA VERNOS POSITIVOS Y SABER QUE NUNCA PERDEREMOS LA ESPERANZA.
+
+>  ESPERO QUE A SUS ESTUDIANTES LES GUSTEN LAS HISTORIAS TANTO COMO A LOS MIOS.
+
+
+* [AMOR DRON](https://srojeda.com/2020/03/28/amor-dron/)
+
+* [ UN CHICO MUY HONESTO](https://srojeda.com/2020/03/30/un-chico-muy-honesto/)
+
+* [ ¡COMIDA PARA TODOS!](https://srojeda.com/2020/03/31/comida-para-todos/)
+
+y más

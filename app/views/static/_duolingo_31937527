@@ -1,0 +1,44 @@
+For the last 3 days, I have been trying to do everything to get my strength for Learning Spanish from English, Family-2 from 75% to 100%.
+
+Nothing works.
+
+Background: Spanish Family-2 has 5 crowns. I started Spanish when the tree was smaller but now have the current larger tree. I have successfully gotten other skills increased from 75% to 100% but not Family-2.
+
+I have tried the following multiple times:
+
+* Chrome browser web Family-2 practice (untimed)
+* Chrome browser web Family-2 practice (timed)
+* Chrome browser web Family-2 practice (untimed, with all Chrome extensions disabled)
+* iPad Family-2 practice
+* android Family-2 practice
+
+My hypothesis is that there is some word or words, that are necessary to get Family-2 to 100%, that are never coming up in my practices.
+
+However, many if not all practices, are showing me pictures of abuelo, hijo, and padre for the first 3 questions.
+
+If I go to https://www.duolingo.com/users/jimoser and look at skill 87, which is Family-2, I see the following words:
+
+language_data --> es --> skills --> 87 --> words
+
+ * 0: "padre"
+ * 1: "bonita"
+ * 2: "bonito"
+ * 3: "inteligente"
+ * 4: "madres"
+ * 5: "italiano"
+ * 6: "su"
+ * 7: "hijo"
+ * 8: "hijos"
+ * 9: "pequeño"
+
+
+I don't remember ever seeing "italiano" or "ital"_something in my web practices but I did see "italiano" or "ital"_something  in my iOS or android practices.
+
+
+Interestingly, when the new Spanish skill were introduced, I didn't initially have them, so I setup another account.
+ 
+In this other account, Family-2 was was not at level 5, but this week I was able to raise the strength of Family-2 in that account from 50% to 75% and then from 75% to 100%, with the Chrome browser.
+
+Possibly related to my question is [Thomas.Heiss](https://www.duolingo.com/Thomas.Heiss)'s question,
+
+[@staff Have there been any changes to your PRACTICE algorithm code and choosen difficulty level?](https://forum.duolingo.com/comment/31856908)
