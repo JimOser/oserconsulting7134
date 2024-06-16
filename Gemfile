@@ -69,3 +69,9 @@ end
 gem "dockerfile-rails", ">= 1.6", :group => :development
 gem "bootstrap"
 gem "sassc-rails"
+#JHO 9/15/2022 for roma.html.haml
+gem 'haml'
+# https://github.com/ytbryan/emd
+# for markdown files, file suffix is md
+gem 'redcarpet'
+gem 'emd'
