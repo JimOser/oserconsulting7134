@@ -1,16 +1,73 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jholist</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Oserconsulting</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <%= yield %>
+  <%= render 'layouts/navbar' %>
+  <div class="container">
+    <div class="blog-header">
+      <h1 class="blog-title"></h1>
+      <p class="lead blog-description"></p>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-md-8 blog-main">
+        <%= yield %>
+      </div> <!-- /.blog-main -->
+      <!-- Sidebar -->
+      <!-- Note one can have multiple sidebar modules. -->
+      <div class="col-sm-3 col-sm-offset-1 blog-sidebar hidden-print">
+        <div class="sidebar-module sidebar-module-inset">
+          <h4>Über</h4>
+          <p>Diese Website wird als Hausaufgabe für OpenHPI "Wie designe ich meine eigene Homepage?" gemacht.</p>
+        </div>
+	<!-- Sidebar -->
+	<!-- Note one can have multiple sidebar modules. -->
+        <div class="sidebar-module">
+          <h4>Posts</h4>
+          <ol class="list-unstyled">
+	    <li><%= link_to "16.07.24 Aller Anfang ist schwer.", article_20160724anfang_path %></li>
+	    <li><%= link_to "16.07.25 Anforderungen", article_20160725blogpost_path %></li>
+          </ol>
+        </div> <!-- sidebar-module -->
+        <div class="sidebar-module">
+          <h4>Irgandwo</h4>
+          <ol class="list-unstyled">
+            <li><%= link_to "email", "mailto:oserj@oserconsulting.com" %></li>
+            <li><%= link_to "facebook as jim.oser.3", "https://www.facebook.com/jim.oser.3" %></li>
+            <li><%= link_to "github as JimOser", "https://github.com/JimOser" %></li>
+            <li><%= link_to "skype as Jim Oser", "http://skype.com" %></li>
+            <li><%= link_to "twitter @JimOser", "https://twitter.com/JimOser" %></li>
+            <li><%= link_to "youtube channel: jimoser113", "https://www.youtube.com/user/jimoser113" %></li>
+            <li><%= link_to "profile on http://coursera.org as Jim Oser", "https://www.coursera.org/user/i/6d75724ad420fe13f857b2319819a5ba" %></li>
+            <li><%= link_to "profile on http://easydaf.de as Jim Oser", "http://easydaf.de/familie/profile/?user_id=294" %></li>
+            <li><%= link_to "profile on http://edx.org as oserj", "https://courses.edx.org/u/oserj#about_me" %></li>
+            <li><%= link_to "profile on http://mylanguageexchange.com as Jim from Novato", "https://www.mylanguageexchange.com/Search.asp?selX3=1&selX6=23&selCountry=null&txtCity=Novato&txtAgeMin=&txtAgeMax=&selSex=null&selIsClass=null&selX4=null&selTxtChat=null&selX13=null&selFace=null&txtFName=&txtDesc=&selOrder=3&txtSrchName=&BtnSubSrch=Search" %></li>
+            <li><%= link_to "profile on http://openhpi.de as Jim Oser", "https://open.hpi.de/users/dbf57177-0578-4a8a-9581-730f167de21f" %></li>
+          </ol>
+          <h4>Websites that I have developed</h4>
+          <ol class="list-unstyled">
+            <li><%= link_to "buzzinboots.org", "http://www.buzzinboots.org" %></li>
+            <p>A San Rafael square dancing club. Site uses rails.</p>
+            <li><%= link_to "fournotrump.com", "http://www.fournotrump.com" %></li>
+            <p>A bridge website for the San Francisco Bay Area. Site uses rails.</p>
+            <li><%= link_to "odhslodges.org", "http://www.odhslodges.org" %></li>
+            <p>German lodges in Petaluma, Santa Rosa, Northern California, and in Texas. Site uses typo3.</p>
+          </ol>
+        </div> <!-- sidebar-module -->
+      </div> <!-- /.blog-sidebar -->
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+  <div class ="hidden-print" >
+    <%= render 'layouts/footer' %>
+  </div>
   </body>
 </html>
