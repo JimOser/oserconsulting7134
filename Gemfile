@@ -67,7 +67,6 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-gem "passenger" 
 
 
 gem "dockerfile-rails", ">= 1.6", :group => :development
