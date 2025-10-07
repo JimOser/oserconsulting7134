@@ -78,3 +78,5 @@ gem 'haml'
 # for markdown files, file suffix is md
 gem 'redcarpet'
 gem 'emd'
+
+gem "aws-sdk-s3", "~> 1.182", :require => false

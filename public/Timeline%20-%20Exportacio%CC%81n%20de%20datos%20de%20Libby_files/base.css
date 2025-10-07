@@ -1,0 +1,230 @@
+/* COLORS
+
+    Plum: #A61C49
+    Wine: #631A35
+    Turquoise: #29CFC3
+    Orange: #F5A623
+*/
+
+html {
+  font-size: 10px;
+  font-family: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-size: 1.7rem;
+  line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+header {
+  overflow: hidden;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+a {
+  color: #A61C49;
+}
+
+a:visited {
+  color: inherit;
+}
+
+h1 {
+  font-family: "MuseoSlabFree", "Rockwell", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 1rem 0;
+}
+
+h3 {
+  margin: 4rem 0 1rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+figure {
+  margin: 0;
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+.amp {
+  font-family: "Baskerville Italic";
+}
+
+.mascot-hide { display: none; }
+
+.libby-mascot {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 100%;
+  border: 3px solid white;
+  background-color: #631A35;
+  background-clip: padding-box;
+  overflow: hidden;
+}
+
+header figure {
+  float: right;
+  width: 6rem;
+}
+
+.table-scroller-1d {
+  overflow-x: auto;
+  padding-bottom: 14px;
+}
+
+.share-category {
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+
+/* -- Cover buttons */
+
+.cover-button-cover-color {
+  fill: hsl(var(--c-h-cover), var(--c-s-cover), var(--c-l-cover));
+}
+
+
+/* -- 1-dimensional tables (key-value tables) */
+
+.share-table-1d,
+.share-table-2d {
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.share-table-1d tr {
+  border-bottom: 1px solid #DDD;
+  vertical-align: middle;
+}
+
+.share-table-1d th,
+.share-table-2d th {
+  text-align: left;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 1.5rem 3rem 1.5rem 0.5rem;
+  font-size: 90%;
+}
+
+.share-table-1d th:first-child,
+.share-table-2d th {
+  opacity: 0.67;
+}
+
+.share-table-1d td,
+.share-table-2d td {
+  padding: 1.5rem 2rem 1.5rem 0.25rem;
+}
+
+.share-table-1d td:last-child,
+.share-table-2d td:last-child {
+  width: 100%;
+}
+
+.share-table-2d td.is-multiline {
+  min-width: 24em;
+  max-width: 32em;
+  white-space: normal;
+}
+
+.share-table-1d td.library-logo-cell:last-child {
+  padding-left: 3em;
+  padding-right: 0;
+  text-align: right;
+  line-height: 0;
+}
+
+.share-table-1d td.library-logo-cell img.library-logo {
+  max-height: 32px;
+  max-width: 96px;
+  display: inline-block;
+}
+
+
+/* -- 2-dimensional tables (alternating row colors) */
+
+.share-table-2d {
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.share-table-2d tr {
+  border-bottom: 1px solid;
+}
+
+.share-table-2d tbody tr {
+  border-bottom-color: #DDD;
+}
+
+.share-table-2d tbody tr:nth-child(2n) {
+  background-color: #F3F8F8;
+}
+
+.share-table-2d td {
+  padding-right: 4rem;
+}
+
+
+/* -- Dark color scheme */
+
+@media (prefers-color-scheme: dark) {
+  html body {
+    background-color: #000;
+    color: #BBB;
+  }
+
+  .libby-mascot {
+    border-color: #000;
+  }
+
+  .share-table-1d tr,
+  .share-table-2d tbody tr {
+    border-color: #444;
+  }
+
+  .share-table-2d tbody tr:nth-child(2n) {
+    background-color: #101A1A;
+  }
+
+  .library-logo {
+    background-color: #FFF;
+    filter: saturate(0) invert(1);
+  }
+}
+
+
+/* Table-specific scrolling for a nicer experience in MobileSafari */
+
+@supports(-webkit-overflow-scrolling: touch) {
+  .table-scroller-2d {
+    overflow-x: auto;
+    padding-bottom: 14px;
+  }
+}
